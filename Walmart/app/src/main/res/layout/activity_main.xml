@@ -15,6 +15,7 @@
         android:src="@drawable/images" />
 
     <TextView
+        android:id="@+id/signText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -33,7 +34,7 @@
         android:text="Email address(required)" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tlEmail"
+        android:id="@+id/textEmail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -49,14 +50,14 @@
         android:layout_height="20dp" />
 
     <TextView
-        android:id="@+id/tvPassword"
+        android:id="@+id/textPwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password(required)" />
 
     <com.google.android.material.textfield.TextInputLayout
 
-        android:id="@+id/tlPassword"
+        android:id="@+id/textPswd"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -68,7 +69,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/tvForgetPassword"
+        android:id="@+id/textForgetPwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoLink="all"
@@ -80,7 +81,7 @@
         android:layout_height="20dp" />
 
     <Button
-        android:id="@+id/btnSignIn"
+        android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#0071CE"
@@ -89,17 +90,18 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="80dp" />
+
     <TextView
+        android:id="@+id/don't"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Don't have an account?"
         android:gravity="center_horizontal"
-        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
-        />
+        android:text="Don't have an account?"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_marginTop="11dp"
-        android:id="@+id/btnCreate"
+        android:id="@+id/create"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
